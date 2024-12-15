@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var wakeDataPicker: UIDatePicker!
     @IBOutlet weak var bonsaiImageView: UIImageView!
 
+    @IBOutlet weak var sleepOutput: UILabel!
     
     
     
@@ -29,16 +30,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         let backgroundImage = UIImage(named: "Image 2 2")//Background Image
         let imageView = UIImageView(image: backgroundImage)
         imageView.contentMode = .scaleAspectFill
         imageView.frame = self.view.bounds // Make it fill the screen
         self.view.insertSubview(imageView, at: 0)
-        
-        
-        
         
         
         resetGrowthProgress()
@@ -60,6 +57,8 @@ class ViewController: UIViewController {
         // Calculate sleep duration
         let sleepDuration = wakeTime.timeIntervalSince(sleepTime)
         print("Sleep Duration: \(sleepDuration / 3600) hours") // For debugging
+        let sleepDurationInHours = sleepDuration / 3600.0
+        sleepOutput.text = String(format: "Sleep: %.2f hours", sleepDurationInHours)
         
         // Save times and grow bonsai tree
         saveSleepRecord(sleep: sleepTime, wake: wakeTime)
