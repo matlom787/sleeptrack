@@ -1,9 +1,10 @@
 Developers:
-Matthew Lomelin
+Matthew Lomelin,
 Harry Le
 
 
 -Goals of the Project-
+
 The goal of this project is to develop a user-friendly sleep tracking application that enables users to:
   -Log their sleep and wake times for accurate tracking of sleep duration.
   -Visualize progress with a bonsai tree that grows as the user logs consistent sleep data.
@@ -28,6 +29,7 @@ The application includes the following functionalities:
 
 
 -Architecture and Design-
+
 Model-View-Controller:
   The project follows the MVC architecture to separate the logic, user interface, and data management:
   Model: Handles persistent storage (UserDefaults) and sleep data calculations.
@@ -39,11 +41,13 @@ Key Components:
 
 
 -Documentation of the Project-
+
 GitHub Location of Code
 The source code for this project is available on GitHub: 
 
 
 -Deployment Instructions-
+
 Ensure you have the latest version of Swift and Xcode installed
 Clone the GitHub repository: 
 Open the project in Xcode:
@@ -54,6 +58,7 @@ Press Cmd + R to build and run the application.
 
 
 -Instructions to Run the Application-
+
 Launch the Application:
   Open the app on your simulator or device.
 Log Sleep Data:
