@@ -12,6 +12,7 @@ The goal of this project is to develop a user-friendly sleep tracking applicatio
 
 
 -Functionalities-
+
 The application includes the following functionalities:
 
 1. Sleep and Wake Time Logging:
